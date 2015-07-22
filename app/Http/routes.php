@@ -15,3 +15,8 @@ $app->get('{page:.*}', function($page) use ($app) {
 	$app->log->info($app->request);
     return '';
 });
+
+$app->post('{page:.*}', function($page) use ($app) {
+	$app->log->info($app->request);
+    return '';
+});
